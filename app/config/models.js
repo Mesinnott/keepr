@@ -15,4 +15,19 @@ angular.module('keepr')
 				}
 			}
     })
+
+		this.Vaults = DS.defineResource({
+      name: 'vault',
+      endpoint: 'vaults',
+			relations:{
+				belongsTo: {
+					user: {
+						localField: 'author',
+						localKey: 'userId'
+					}
+				}
+			}
+    })
+
+
   })

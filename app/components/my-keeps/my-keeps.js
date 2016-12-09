@@ -18,6 +18,11 @@
       keep.keepCount = 0
       Models.Keeps.create(keep)
       mkc.newKeep = null
+
+    }
+
+    this.share=function(){
+      
     }
 
 		this.$onInit = function () {

@@ -18,5 +18,29 @@
 </div>
 
 <div class="my-vaults">
+
+	<div class="gallery">
+
+		<div class="col-sm-3" style="margin: .6em 0;" ng-repeat="vault in $ctrl.myVaults | filter: $ctrl.query">
+			<div class="keep">
+				<!--<div class="keep-img">
+					<img ng-src="{{keep.imgUrl}}" alt="Image title">
+				</div>-->
+				<div class="keep-details">
+					<h3>{{vault.title}}</h3>
+					<div class="caption">
+						<p>{{vault.body}}</p>
+						<!--<hr>-->
+						<!--<p class="text-center">
+							<a class="btn btn-theme" role="button" ng-click="$ctrl.onKeepClick(keep)">K</a>
+							<a class="btn btn-default" role="button"><i class="fa fa-share"></i></a>
+							<a class="btn btn-info" role="button" href="{{keep.link}}" target="_blank"><i class="fa fa-eye"></i></a>
+						</p>-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 	<h2>You should be able to manage your individual vaults here and browse their contents</h2>
 </div>
